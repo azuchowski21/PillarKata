@@ -48,7 +48,10 @@ public class RomanNumeral
     public Integer convertRomanNumeralToNumber(String inputRomanNumeral)
     {
         Integer returnVal = 0;
-
+        if(inputRomanNumeral.length() > 3 && inputRomanNumeral.substring(0,4).equals("MMMM"))
+        {
+            return returnVal;
+        }
         LinkedHashMap<String, Integer> romanNumeralsMap = new LinkedHashMap<>();
         romanNumeralsMap.put("M", 1000);
         romanNumeralsMap.put("D", 500);

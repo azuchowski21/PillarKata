@@ -174,5 +174,10 @@ public class RomanNumeralTest
     {
         assertEquals(Integer.valueOf(1000), romanNumeral.convertRomanNumeralToNumber("M"));
     }
+    @Test
+    public void whenRomanNumeralIsPassedValueGreaterThanThreeNineNineNine()
+    {
+        assertEquals(Integer.valueOf(0), romanNumeral.convertRomanNumeralToNumber("MMMM"));
+    }
 
 }
