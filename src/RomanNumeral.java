@@ -19,6 +19,10 @@ public class RomanNumeral
         {
             return "V";
         }
+        else if(inputNumber == 6)
+        {
+            return "VI";
+        }
         return "I";
     }
 }
