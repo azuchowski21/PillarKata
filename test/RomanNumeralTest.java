@@ -102,5 +102,10 @@ public class RomanNumeralTest
     {
         assertEquals("D", romanNumeral.convertNumberToRomanNumeral(500));
     }
+    @Test
+    public void whenRomanNumeralIsPassedOneThousandItReturnsM()
+    {
+        assertEquals("M", romanNumeral.convertNumberToRomanNumeral(1000));
+    }
 
 }
