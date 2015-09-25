@@ -17,7 +17,7 @@ public class RomanNumeral
         }
         else if(inputNumber == 5)
         {
-            return "IV";
+            return "V";
         }
         return "I";
     }
