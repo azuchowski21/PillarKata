@@ -50,6 +50,7 @@ public class RomanNumeral
         Integer returnVal = 0;
 
         LinkedHashMap<String, Integer> romanNumeralsMap = new LinkedHashMap<>();
+        romanNumeralsMap.put("C", 100);
         romanNumeralsMap.put("L", 50);
         romanNumeralsMap.put("X", 10);
         romanNumeralsMap.put("V", 5);
