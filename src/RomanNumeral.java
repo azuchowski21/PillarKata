@@ -45,4 +45,8 @@ public class RomanNumeral
         }
         return returnValue;
     }
+    public Integer convertRomanNumeralToNumber(String inputRomanNumeral)
+    {
+        return 1;
+    }
 }

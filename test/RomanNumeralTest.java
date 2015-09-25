@@ -13,6 +13,10 @@ public class RomanNumeralTest
     {
         romanNumeral = new RomanNumeral();
     }
+
+    /*********************************************************************
+     *  Tests for Number to Roman Numeral
+     *********************************************************************/
     @Test
     public void whenRomanNumeralIsPassedANumberItReturnsThatRomanNumeral()
     {
@@ -116,6 +120,14 @@ public class RomanNumeralTest
     public void whenRomanNumeralIsPassedNumberLessThanOne()
     {
         assertEquals("Invalid Number - Too Small", romanNumeral.convertNumberToRomanNumeral(-3));
+    }
+    /*********************************************************************
+     *  Tests for Roman Numeral to Number
+     *********************************************************************/
+    @Test
+    public void whenRomanNumeralIsPassedIItReturns1()
+    {
+        assertEquals(Integer.valueOf(1), romanNumeral.convertRomanNumeralToNumber("I"));
     }
 
 }
