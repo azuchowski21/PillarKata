@@ -61,5 +61,10 @@ public class RomanNumeralTest
     {
         assertEquals("IX", romanNumeral.convertNumberToRomanNumeral(9));
     }
+    @Test
+    public void whenRomanNumeralIsPassedATenItReturnsRomanNumeralForTen()
+    {
+        assertEquals("X", romanNumeral.convertNumberToRomanNumeral(10));
+    }
 
 }
