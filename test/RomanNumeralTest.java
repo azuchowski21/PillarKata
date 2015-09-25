@@ -37,7 +37,7 @@ public class RomanNumeralTest
         assertEquals("IV", romanNumeral.convertNumberToRomanNumeral(4));
     }
     @Test
-    public void whenRomanNumeralIsPassedAFiveItReturnsRomanNumeralForFive()
+    public void whenRomanNumeralIsPassedAFiveItReturnsRomanNumeralV()
     {
         assertEquals("V", romanNumeral.convertNumberToRomanNumeral(5));
     }
@@ -62,7 +62,7 @@ public class RomanNumeralTest
         assertEquals("IX", romanNumeral.convertNumberToRomanNumeral(9));
     }
     @Test
-    public void whenRomanNumeralIsPassedATenItReturnsRomanNumeralForTen()
+    public void whenRomanNumeralIsPassedATenItReturnsRomanNumeralX()
     {
         assertEquals("X", romanNumeral.convertNumberToRomanNumeral(10));
     }
@@ -72,7 +72,7 @@ public class RomanNumeralTest
         assertEquals("XL", romanNumeral.convertNumberToRomanNumeral(40));
     }
     @Test
-    public void whenRomanNumeralIsPassedFiftyItReturnsRomanNumeralForFifty()
+    public void whenRomanNumeralIsPassedFiftyItReturnsRomanNumeralL()
     {
         assertEquals("L", romanNumeral.convertNumberToRomanNumeral(50));
     }
@@ -85,6 +85,11 @@ public class RomanNumeralTest
     public void whenRomanNumeralIsPassedNinetyLCanNotBeRepeated()
     {
         assertEquals("XC", romanNumeral.convertNumberToRomanNumeral(90));
+    }
+    @Test
+    public void whenRomanNumeralIsPassedOneHundredItReturnsC()
+    {
+        assertEquals("C", romanNumeral.convertNumberToRomanNumeral(100));
     }
 
 }
