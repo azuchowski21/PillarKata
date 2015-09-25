@@ -8,6 +8,8 @@ public class RomanNumeral
     {
         String returnValue = "";
         LinkedHashMap<Integer, String> romanNumeralsMap = new LinkedHashMap<>();
+        romanNumeralsMap.put(500,"D");
+        romanNumeralsMap.put(400,"CD");
         romanNumeralsMap.put(100,"C");
         romanNumeralsMap.put(90,"XC");
         romanNumeralsMap.put(50,"L");
