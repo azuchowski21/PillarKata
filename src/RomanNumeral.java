@@ -11,6 +11,10 @@ public class RomanNumeral
         {
             return "III";
         }
+        else if(inputNumber == 4)
+        {
+            return "IV";
+        }
         return "I";
     }
 }

@@ -27,4 +27,11 @@ public class RomanNumeralTest
         assertEquals("III", romanNumeral.convertNumberToRomanNumeral(3));
 
     }
+    @Test
+    public void whenRomanNumeralIsPassedAFourItReturnsRomanNumeralForFour()
+    {
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals("IV", romanNumeral.convertNumberToRomanNumeral(4));
+
+    }
 }
