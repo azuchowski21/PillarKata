@@ -67,7 +67,7 @@ public class RomanNumeralTest
         assertEquals("X", romanNumeral.convertNumberToRomanNumeral(10));
     }
     @Test
-    public void whenRomanNumeralIsPassedFortyItReturnsRomanNumeralForForty()
+    public void whenRomanNumeralIsPassedFortyXCanNotRepeatMoreThanThreeTimes()
     {
         assertEquals("XL", romanNumeral.convertNumberToRomanNumeral(40));
     }
@@ -82,7 +82,7 @@ public class RomanNumeralTest
         assertEquals("LXXX", romanNumeral.convertNumberToRomanNumeral(80));
     }
     @Test
-    public void whenRomanNumeralIsPassedNinetyItReturnsRomanNumeralForNinety()
+    public void whenRomanNumeralIsPassedNinetyLCanNotBeRepeated()
     {
         assertEquals("XC", romanNumeral.convertNumberToRomanNumeral(90));
     }
