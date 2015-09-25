@@ -10,6 +10,10 @@ public class RomanNumeral
         {
             return "Invalid Number - Too Large";
         }
+        else if(inputNumber < 1)
+        {
+            return "Invalid Number - Too Small";
+        }
         String returnValue = "";
 
         LinkedHashMap<Integer, String> romanNumeralsMap = new LinkedHashMap<>();
