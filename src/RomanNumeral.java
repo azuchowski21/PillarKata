@@ -7,6 +7,10 @@ public class RomanNumeral
         {
             return "II";
         }
+        else if(inputNumber == 3)
+        {
+            return "III";
+        }
         return "I";
     }
 }
