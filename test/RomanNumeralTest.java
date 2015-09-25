@@ -129,5 +129,10 @@ public class RomanNumeralTest
     {
         assertEquals(Integer.valueOf(1), romanNumeral.convertRomanNumeralToNumber("I"));
     }
+    @Test
+    public void whenRomanNumeralIsPassedIIItReturns2()
+    {
+        assertEquals(Integer.valueOf(2), romanNumeral.convertRomanNumeralToNumber("II"));
+    }
 
 }
