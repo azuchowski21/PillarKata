@@ -164,5 +164,10 @@ public class RomanNumeralTest
     {
         assertEquals(Integer.valueOf(100), romanNumeral.convertRomanNumeralToNumber("C"));
     }
+    @Test
+    public void whenRomanNumeralIsPassedCItReturns500()
+    {
+        assertEquals(Integer.valueOf(500), romanNumeral.convertRomanNumeralToNumber("D"));
+    }
 
 }
