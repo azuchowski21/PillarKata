@@ -6,7 +6,12 @@ public class RomanNumeral
 {
     public String convertNumberToRomanNumeral(Integer inputNumber)
     {
+        if(inputNumber > 3999)
+        {
+            return "Invalid Number - Too Large";
+        }
         String returnValue = "";
+
         LinkedHashMap<Integer, String> romanNumeralsMap = new LinkedHashMap<>();
         romanNumeralsMap.put(1000,"M");
         romanNumeralsMap.put(900,"CM");

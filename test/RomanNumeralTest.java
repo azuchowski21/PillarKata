@@ -107,5 +107,10 @@ public class RomanNumeralTest
     {
         assertEquals("M", romanNumeral.convertNumberToRomanNumeral(1000));
     }
+    @Test
+    public void whenRomanNumeralIsPassedNumberGreaterThanThreeNineNineNine()
+    {
+        assertEquals("Invalid Number - Too Large", romanNumeral.convertNumberToRomanNumeral(4000));
+    }
 
 }
