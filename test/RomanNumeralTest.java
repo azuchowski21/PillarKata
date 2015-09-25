@@ -71,5 +71,10 @@ public class RomanNumeralTest
     {
         assertEquals("XL", romanNumeral.convertNumberToRomanNumeral(40));
     }
+    @Test
+    public void whenRomanNumeralIsPassedFiftyItReturnsRomanNumeralForFifty()
+    {
+        assertEquals("L", romanNumeral.convertNumberToRomanNumeral(50));
+    }
 
 }
