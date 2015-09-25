@@ -47,18 +47,27 @@ public class RomanNumeral
     }
     public Integer convertRomanNumeralToNumber(String inputRomanNumeral)
     {
-        if(inputRomanNumeral.equals("II"))
+        Integer returnVal = 0;
+
+        LinkedHashMap<String, Integer> romanNumeralsMap = new LinkedHashMap<>();
+        romanNumeralsMap.put("X", 10);
+        romanNumeralsMap.put("V", 5);
+        romanNumeralsMap.put("I", 1);
+
+        for(int i = 0; i < (inputRomanNumeral.length() - 1); i++)
         {
-            return 2;
+            if(romanNumeralsMap.get(String.valueOf(inputRomanNumeral.charAt(i))) < romanNumeralsMap.get(String.valueOf(inputRomanNumeral.charAt(i + 1))))
+            {
+                returnVal -= romanNumeralsMap.get(String.valueOf(inputRomanNumeral.charAt(i)));
+            }
+            else
+            {
+                returnVal += romanNumeralsMap.get(String.valueOf(inputRomanNumeral.charAt(i)));
+            }
         }
-        else if(inputRomanNumeral.equals("III"))
-        {
-            return 3;
-        }
-        else if(inputRomanNumeral.equals("IV"))
-        {
-            return 4;
-        }
-        return 1;
+
+        returnVal += romanNumeralsMap.get(String.valueOf(inputRomanNumeral.charAt(inputRomanNumeral.length() - 1)));
+
+        return returnVal;
     }
 }
