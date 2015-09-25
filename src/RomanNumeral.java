@@ -1,44 +1,31 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 /**/
 public class RomanNumeral
 {
     public String convertNumberToRomanNumeral(Integer inputNumber)
     {
-        if(inputNumber == 2)
+        String returnValue = "";
+        LinkedHashMap<Integer, String> romanNumeralsMap = new LinkedHashMap<>();
+        romanNumeralsMap.put(10,"X");
+        romanNumeralsMap.put(9,"IX");
+        romanNumeralsMap.put(5,"V");
+        romanNumeralsMap.put(4,"IV");
+        romanNumeralsMap.put(1,"I");
+
+        while(inputNumber > 0)
         {
-            return "II";
+            for(Map.Entry<Integer, String> entry : romanNumeralsMap.entrySet())
+            {
+                if(inputNumber >= entry.getKey())
+                {
+                    inputNumber = inputNumber - entry.getKey();
+                    returnValue += entry.getValue();
+                    break;
+                }
+            }
         }
-        else if(inputNumber == 3)
-        {
-            return "III";
-        }
-        else if(inputNumber == 4)
-        {
-            return "IV";
-        }
-        else if(inputNumber == 5)
-        {
-            return "V";
-        }
-        else if(inputNumber == 6)
-        {
-            return "VI";
-        }
-        else if(inputNumber == 7)
-        {
-            return "VII";
-        }
-        else if(inputNumber == 8)
-        {
-            return "VIII";
-        }
-        else if(inputNumber == 9)
-        {
-            return "IX";
-        }
-        else if(inputNumber == 10)
-        {
-            return "X";
-        }
-        return "I";
+        return returnValue;
     }
 }
