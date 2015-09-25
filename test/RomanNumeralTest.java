@@ -95,6 +95,7 @@ public class RomanNumeralTest
     public void whenRomanNumeralIsPassedFourHundredCCanNotRepeatMoreThanThreeTimes()
     {
         assertEquals("CD", romanNumeral.convertNumberToRomanNumeral(400));
+        assertEquals("CM", romanNumeral.convertNumberToRomanNumeral(900));
     }
     @Test
     public void whenRomanNumeralIsPassedFiveHundredItReturnsD()
