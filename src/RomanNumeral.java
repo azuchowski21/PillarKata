@@ -31,6 +31,10 @@ public class RomanNumeral
         {
             return "VIII";
         }
+        else if(inputNumber == 9)
+        {
+            return "IX";
+        }
         return "I";
     }
 }
