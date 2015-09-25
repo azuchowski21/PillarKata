@@ -149,5 +149,10 @@ public class RomanNumeralTest
     {
         assertEquals(Integer.valueOf(5), romanNumeral.convertRomanNumeralToNumber("V"));
     }
+    @Test
+    public void whenRomanNumeralIsPassedXItReturns10()
+    {
+        assertEquals(Integer.valueOf(10), romanNumeral.convertRomanNumeralToNumber("X"));
+    }
 
 }
