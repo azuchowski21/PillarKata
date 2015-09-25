@@ -46,5 +46,10 @@ public class RomanNumeralTest
     {
         assertEquals("VI", romanNumeral.convertNumberToRomanNumeral(6));
     }
+    @Test
+    public void whenRomanNumeralIsPassedASevenItReturnsRomanNumeralForSeven()
+    {
+        assertEquals("VII", romanNumeral.convertNumberToRomanNumeral(7));
+    }
 
 }

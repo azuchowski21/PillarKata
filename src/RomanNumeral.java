@@ -23,6 +23,10 @@ public class RomanNumeral
         {
             return "VI";
         }
+        else if(inputNumber == 7)
+        {
+            return "VII";
+        }
         return "I";
     }
 }
