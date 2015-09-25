@@ -55,6 +55,10 @@ public class RomanNumeral
         {
             return 3;
         }
+        else if(inputRomanNumeral.equals("IV"))
+        {
+            return 4;
+        }
         return 1;
     }
 }
